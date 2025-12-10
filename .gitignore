@@ -1,0 +1,19 @@
+# Workspace directory (user content)
+workspace/
+
+# Environment files with secrets
+.env
+.env.*
+
+# Docker
+.docker/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo

@@ -1,0 +1,15 @@
+services:
+  claude-code:
+    build: .
+    image: claude-code-dev
+    container_name: claude-dev
+    stdin_open: true
+    tty: true
+    volumes:
+      # Mount workspace for general work
+      - ./workspace:/home/claude/workspace
+    environment:
+      - TERM=xterm-256color
+      # Override to use a different demo project
+      # - DEMO_REPO=https://github.com/user/repo
+    network_mode: bridge
